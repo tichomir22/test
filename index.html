@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<head>
+  <meta name="viewport" content = "width=device-width, initial-scale = 1">
+    <title>Testovoe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+          "@type": "Question",
+          "name": "Какие грузы должны проходить таможенное оформление?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus tempus sapien, vitae ultricies dolor. Aliquam pulvinar eleifend mauris, vitae dignissim ligula viverra pharetra. Donec viverra turpis et lobortis finibus. Donec euismod eu mi at tristique. Nunc sed convallis mi. Praesent risus erat, volutpat non libero a, faucibus ullamcorper quam. Vivamus laoreet sem nec vulputate scelerisque. Duis et molestie massa. Vestibulum purus lorem, gravida at dapibus ac, eleifend eu arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus venenatis erat vitae tempor tincidunt. Ut ullamcorper erat a leo commodo varius. Morbi mattis feugiat laoreet. Integer non metus vel justo luctus sollicitudin. Duis pharetra lectus a nisi consectetur convallis.</p>"
+          }
+        }, 
+        {
+        "@type": "Question",
+          "name": "Каким нормативным актом утверждены допустимые масса и габариты транспортного средства при перевозке грузов?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus tempus sapien, vitae ultricies dolor. Aliquam pulvinar eleifend mauris, vitae dignissim ligula viverra pharetra. Donec viverra turpis et lobortis finibus. Donec euismod eu mi at tristique. Nunc sed convallis mi. Praesent risus erat, volutpat non libero a, faucibus ullamcorper quam. Vivamus laoreet sem nec vulputate scelerisque. Duis et molestie massa. Vestibulum purus lorem, gravida at dapibus ac, eleifend eu arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus venenatis erat vitae tempor tincidunt. Ut ullamcorper erat a leo commodo varius. Morbi mattis feugiat laoreet. Integer non metus vel justo luctus sollicitudin. Duis pharetra lectus a nisi consectetur convallis.</p>"
+          }
+        }, 
+        {
+          "@type": "Question",
+          "name": "Как рассчитывается стоимость подготовки документов для растаможки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus tempus sapien, vitae ultricies dolor. Aliquam pulvinar eleifend mauris, vitae dignissim ligula viverra pharetra. Donec viverra turpis et lobortis finibus. Donec euismod eu mi at tristique. Nunc sed convallis mi. Praesent risus erat, volutpat non libero a, faucibus ullamcorper quam. Vivamus laoreet sem nec vulputate scelerisque. Duis et molestie massa. Vestibulum purus lorem, gravida at dapibus ac, eleifend eu arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus venenatis erat vitae tempor tincidunt. Ut ullamcorper erat a leo commodo varius. Morbi mattis feugiat laoreet. Integer non metus vel justo luctus sollicitudin. Duis pharetra lectus a nisi consectetur convallis.</p>"
+          }
+        }]
+      }
+      </script>
+</head>
+<body>
+    <h1 class="title">Типы стандартных контейнеров</h1>
+    <div class="icon-box">
+    <div class="icon-box__container">
+  <img class="icon-img" src="img/Frame 628 (1).svg">
+      <p class="icon-desc">Увеличение скорости доставки</p>
+      </div>
+      <div class="icon-box__container">
+        <img class="icon-img" src="img/Frame 631 (1).svg">
+      <p class="icon-desc">Обеспечение абсолютной сохранности грузов</p>
+      </div>
+      <div class="icon-box__container">
+        <img class="icon-img" src="img/Frame 632.svg">
+      <p class="icon-desc">Исключение потери или порчи груза в процессе транспортировки</p>
+      </div>
+      <div class="icon-box__container">
+        <img class="icon-img" src="img/Frame 633.svg">
+      <p class="icon-desc">Перевозка различных видов грузов: сыпучие, жидкости и другие</p>
+      </div>
+    </div>
+    <div class="tabs">
+      <select id="tabSelect">
+          <option value="tabcont1">20 DC</option>
+          <option value="tabcont2">20 PW</option>
+          <option value="tabcont3">40 DC</option>
+          <option value="tabcont4">40 HQ</option>
+          <option value="tabcont5">45 HQ</option>
+          <option value="tabcont6">40 FR</option>
+      </select>
+      <input type="radio" name="tabs" id="tab1" checked="checked">
+      <label for="tab1">20 DC</label>
+      <div class="tab active" id="tabcont1">
+        <div class="tab-content">
+        <img class="tab-img" src="img/Container -2.png">
+        <div class="tab-table__first">
+          <table>
+            <tr>
+              <th class="green bold">20 DC</th>
+              <td>Длина</td>
+              <td>Ширина</td>
+              <td>Высота</td>
+            </tr>
+            <tr>
+              <td>Внешние</td>
+              <td class="bold">6,058 м</td>
+              <td class="bold">2,438 м</td>
+              <td class="bold">2,591 м</td>
+            </tr>
+            <tr>
+              <td>Внутренние</td>
+              <td class="bold">5,758 м</td>
+              <td class="bold">2,352 м</td>
+              <td class="bold">2,385 м</td>
+            </tr>
+            <tr>
+              <td>Двери</td>
+              <td class="bold">—</td>
+              <td class="bold">2,343 м</td>
+              <td class="bold">2,280 м</td>
+            </tr>
+          </table>
+          </div>
+          <div class="tab-table__second">
+          <table>
+            <tr>
+              <td>Объем
+              </td>
+              <td class="align-right bold">33,100 м3</td>
+            </tr>
+            <tr>
+              <td>Масса брутто (max)
+              </td>
+              <td class="align-right bold">30 400 кг</td>
+            </tr>
+            <tr>
+              <td>Масса контейнера
+              </td>
+              <td class="align-right bold">2 200 кг</td>
+            </tr>
+            <tr>
+              <td>Масса груза
+              </td>
+              <td class="align-right bold">28 200 кг</td>
+            </tr>
+          </table>
+          </div>
+        </div>
+        </div>
+      
+      <input type="radio" name="tabs" id="tab2">
+      <label for="tab2">20 PW</label>
+      <div class="tab" id="tabcont2">
+        <div class="tab-content">
+        <img class="tab-img" src="img/Container -2.png">
+        <div class="tab-table__first">
+          <table>
+            <tr>
+              <th class="green bold">20 PW</th>
+              <td>Длина</td>
+              <td>Ширина</td>
+              <td>Высота</td>
+            </tr>
+            <tr>
+              <td>Внешние</td>
+              <td class="bold">6,058 м</td>
+              <td class="bold">2,438 м</td>
+              <td class="bold">2,591 м</td>
+            </tr>
+            <tr>
+              <td>Внутренние</td>
+              <td class="bold">5,898 м</td>
+              <td class="bold">2,426 м</td>
+              <td class="bold">2,393 м</td>
+            </tr>
+            <tr>
+              <td>Двери</td>
+              <td class="bold">—</td>
+              <td class="bold">2,393 м</td>
+              <td class="bold">2,374 м</td>
+            </tr>
+          </table>
+          </div>
+          <div class="tab-table__second">
+          <table>
+            <tr>
+              <td>Объем
+              </td>
+              <td class="align-right bold">34,200 м3</td>
+            </tr>
+            <tr>
+              <td>Масса брутто (max)
+              </td>
+              <td class="align-right bold">30 480 кг</td>
+            </tr>
+            <tr>
+              <td>Масса контейнера
+              </td>
+              <td class="align-right bold">2 340 кг</td>
+            </tr>
+            <tr>
+              <td>Масса груза
+              </td>
+              <td class="align-right bold">28 140 кг</td>
+            </tr>
+          </table>
+          </div>
+        </div>
+        </div>
+      
+      <input type="radio" name="tabs" id="tab3">
+      <label for="tab3">40 DC</label>
+      <div class="tab" id="tabcont3">
+        <div class="tab-content">
+        <img class="tab-img" src="img/Container -2.png">
+        <div class="tab-table__first">
+          <table>
+            <tr>
+              <th class="green bold">40 DC</th>
+              <td>Длина</td>
+              <td>Ширина</td>
+              <td>Высота</td>
+            </tr>
+            <tr>
+              <td>Внешние</td>
+              <td class="bold">12,192 м</td>
+              <td class="bold">2,438 м</td>
+              <td class="bold">2,591 м</td>
+            </tr>
+            <tr>
+              <td>Внутренние</td>
+              <td class="bold">12,032 м</td>
+              <td class="bold">2,352 м</td>
+              <td class="bold">2,385 м</td>
+            </tr>
+            <tr>
+              <td>Двери</td>
+              <td class="bold">—</td>
+              <td class="bold">2,438 м</td>
+              <td class="bold">2,280 м</td>
+            </tr>
+          </table>
+          </div>
+          <div class="tab-table__second">
+          <table>
+            <tr>
+              <td>Объем
+              </td>
+              <td class="align-right bold">67,700 м3</td>
+            </tr>
+            <tr>
+              <td>Масса брутто (max)
+              </td>
+              <td class="align-right bold">30 400 кг</td>
+            </tr>
+            <tr>
+              <td>Масса контейнера
+              </td>
+              <td class="align-right bold">3 800 кг</td>
+            </tr>
+            <tr>
+              <td>Масса груза
+              </td>
+              <td class="align-right bold">26 600 кг</td>
+            </tr>
+          </table>
+          </div>
+        </div>
+        </div>
+
+        <input type="radio" name="tabs" id="tab4">
+        <label for="tab4">40 HQ</label>
+        <div class="tab" id="tabcont4">
+          <div class="tab-content">
+            <img class="tab-img" src="img/Container -2.png">
+            <div class="tab-table__first">
+              <table>
+                <tr>
+                  <th class="green bold">40 DC</th>
+                  <td>Длина</td>
+                  <td>Ширина</td>
+                  <td>Высота</td>
+                </tr>
+                <tr>
+                  <td>Внешние</td>
+                  <td class="bold">12,190 м</td>
+                  <td class="bold">2,438 м</td>
+                  <td class="bold">2,896 м</td>
+                </tr>
+                <tr>
+                  <td>Внутренние</td>
+                  <td class="bold">12,000 м</td>
+                  <td class="bold">2,311 м</td>
+                  <td class="bold">2,650 м</td>
+                </tr>
+                <tr>
+                  <td>Двери</td>
+                  <td class="bold">—</td>
+                  <td class="bold">2,280 м</td>
+                  <td class="bold">2,560 м</td>
+                </tr>
+              </table>
+              </div>
+              <div class="tab-table__second">
+              <table>
+                <tr>
+                  <td>Объем
+                  </td>
+                  <td class="align-right bold">75,300 м3</td>
+                </tr>
+                <tr>
+                  <td>Масса брутто (max)
+                  </td>
+                  <td class="align-right bold">30 400 кг
+                <tr>
+                  <td>Масса контейнера
+                  </td>
+                  <td class="align-right bold">3 900 кг</td>
+                </tr>
+                <tr>
+                  <td>Масса груза
+                  </td>
+                  <td class="align-right bold">26 580 кг</td>
+                </tr>
+              </table>
+              </div>
+            </div>
+          </div>
+
+          <input type="radio" name="tabs" id="tab5">
+      <label for="tab5">45 HQ</label>
+      <div class="tab" id="tabcont5">
+        <div class="tab-content">
+        <img class="tab-img" src="img/Container -2.png">
+        <div class="tab-table__first">
+          <table>
+            <tr>
+              <th class="green bold">DC</th>
+              <td>Длина</td>
+              <td>Ширина</td>
+              <td>Высота</td>
+            </tr>
+            <tr>
+              <td>Внешние</td>
+              <td class="bold">13,716 м</td>
+              <td class="bold">2,438 м</td>
+              <td class="bold">2,896 м</td>
+            </tr>
+            <tr>
+              <td>Внутренние</td>
+              <td class="bold">13,556 м</td>
+              <td class="bold">2,352 м</td>
+              <td class="bold">2,698 м</td>
+            </tr>
+            <tr>
+              <td>Двери</td>
+              <td class="bold">—</td>
+              <td class="bold">2,343 м</td>
+              <td class="bold">2,585 м</td>
+            </tr>
+          </table>
+          </div>
+          <div class="tab-table__second">
+          <table>
+            <tr>
+              <td>Объем
+              </td>
+              <td class="align-right bold">86,100 м3</td>
+            </tr>
+            <tr>
+              <td>Масса брутто (max)
+              </td>
+              <td class="align-right bold">30 400 кг</td>
+            </tr>
+            <tr>
+              <td>Масса контейнера
+              </td>
+              <td class="align-right bold">4 800 кг</td>
+            </tr>
+            <tr>
+              <td>Масса груза
+              </td>
+              <td class="align-right bold">25 600 кг</td>
+            </tr>
+          </table>
+          </div>
+        </div>
+        </div>
+
+        <input type="radio" name="tabs" id="tab6">
+      <label for="tab6">40 FR</label>
+      <div class="tab" id="tabcont6">
+        <div class="tab-content">
+        <img class="tab-img-last" src="img/Container -2.png">
+        <div class="tab-table__first">
+          <table>
+            <tr>
+              <th class="green bold">40 FR</th>
+              <td>Длина</td>
+              <td>Ширина</td>
+              <td>Высота</td>
+            </tr>
+            <tr>
+              <td>Внешние</td>
+              <td class="bold">6,058 м</td>
+              <td class="bold">2,438 м</td>
+              <td class="bold">2,591 м</td>
+            </tr>
+            <tr>
+              <td>Внутренние</td>
+              <td class="bold">6,058 м</td>
+              <td class="bold">2,438 м</td>
+              <td class="bold">2,591 м</td>
+            </tr>
+            <tr>
+              <td>Двери</td>
+              <td class="bold">—</td>
+              <td class="bold">2,438 м</td>
+              <td class="bold">2,591 м</td>
+            </tr>
+          </table>
+          </div>
+        </div>
+        </div>
+
+
+
+
+    </div>
+  </div>
+
+<section id="faq">
+  <div class="title">Ответы на часто задаваемые вопросы</div>
+  <div class="faq-content">
+    <div class="faq-question">
+      <input id="q1" type="checkbox" class="panel">
+      <div class="plus"></div>
+      <label for="q1" class="panel-title">Какие грузы должны проходить таможенное оформление?</label>
+      <div class="panel-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus tempus sapien, vitae ultricies dolor. Aliquam pulvinar eleifend mauris, vitae dignissim ligula viverra pharetra. Donec viverra turpis et lobortis finibus. Donec euismod eu mi at tristique. Nunc sed convallis mi. Praesent risus erat, volutpat non libero a, faucibus ullamcorper quam. Vivamus laoreet sem nec vulputate scelerisque. Duis et molestie massa. Vestibulum purus lorem, gravida at dapibus ac, eleifend eu arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus venenatis erat vitae tempor tincidunt. Ut ullamcorper erat a leo commodo varius. Morbi mattis feugiat laoreet. Integer non metus vel justo luctus sollicitudin. Duis pharetra lectus a nisi consectetur convallis.</div>
+    </div>
+    
+    <div class="faq-question">
+      <input id="q2" type="checkbox" class="panel">
+      <div class="plus"></div>
+      <label for="q2" class="panel-title">Каким нормативным актом утверждены допустимые масса и габариты транспортного средства при перевозке грузов?</label>
+      <div class="panel-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus tempus sapien, vitae ultricies dolor. Aliquam pulvinar eleifend mauris, vitae dignissim ligula viverra pharetra. Donec viverra turpis et lobortis finibus. Donec euismod eu mi at tristique. Nunc sed convallis mi. Praesent risus erat, volutpat non libero a, faucibus ullamcorper quam. Vivamus laoreet sem nec vulputate scelerisque. Duis et molestie massa. Vestibulum purus lorem, gravida at dapibus ac, eleifend eu arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus venenatis erat vitae tempor tincidunt. Ut ullamcorper erat a leo commodo varius. Morbi mattis feugiat laoreet. Integer non metus vel justo luctus sollicitudin. Duis pharetra lectus a nisi consectetur convallis.</div>
+    </div>
+    
+    <div class="faq-question">
+      <input id="q3" type="checkbox" class="panel">
+      <div class="plus"></div>
+      <label for="q3" class="panel-title">Как рассчитывается стоимость подготовки документов для растаможки?</label>
+      <div class="panel-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus tempus sapien, vitae ultricies dolor. Aliquam pulvinar eleifend mauris, vitae dignissim ligula viverra pharetra. Donec viverra turpis et lobortis finibus. Donec euismod eu mi at tristique. Nunc sed convallis mi. Praesent risus erat, volutpat non libero a, faucibus ullamcorper quam. Vivamus laoreet sem nec vulputate scelerisque. Duis et molestie massa. Vestibulum purus lorem, gravida at dapibus ac, eleifend eu arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Phasellus venenatis erat vitae tempor tincidunt. Ut ullamcorper erat a leo commodo varius. Morbi mattis feugiat laoreet. Integer non metus vel justo luctus sollicitudin. Duis pharetra lectus a nisi consectetur convallis.</a></div>
+    </div>
+  </div>
+</section>
+<script>
+  document.getElementById("tabSelect").addEventListener("change", function() {
+    var selectedTab = this.value;
+    var tabs = document.getElementsByClassName("tab");
+    
+    for (var i = 0; i < tabs.length; i++) {
+      tabs[i].classList.remove("active");
+    }
+    
+    document.getElementById(selectedTab).classList.add("active");
+  });
+
+  var tabs = document.getElementsByName("tabs");
+
+tabs.forEach(tab => {
+  tab.addEventListener("change", function() {
+    var selectedTabId = this.id.replace("tab", "");
+    var tabContents = document.getElementsByClassName("tab");
+
+    for (var i = 0; i < tabContents.length; i++) {
+      tabContents[i].classList.remove("active");
+    }
+
+    document.getElementById("tabcont" + selectedTabId).classList.add("active");
+  });
+});
+  </script>
+</body>

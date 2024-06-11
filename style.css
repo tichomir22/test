@@ -1,0 +1,466 @@
+
+p{
+    margin:0;
+  }
+  .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      box-shadow: 0px 4px 10px 0px #00000026;
+      border-radius:20px;
+      padding:50px 58px 50px 58px;
+  }
+  .tabs label {
+      order: 1;
+      display: block;
+      padding: 20px 70px;
+      margin-right: 0.2rem;
+      cursor: pointer;
+      background:#fff;
+      margin:auto;
+  }
+  .tabs .tab {
+    order: 99;
+    flex-grow: 1;
+      width: 100%;
+      display: none;
+    padding:0;
+    background: #fff;
+  }
+  .tabs input[type="radio"] {
+      display: none;
+  }
+  .tabs input[type="radio"]:checked + label {
+    border-bottom:solid 3px #159E64;
+  }
+.tab.active{
+    display:block;
+}
+select{
+    display:none;
+}
+  body {
+    background: #fff;
+    min-height: 100vh;
+      box-sizing: border-box;
+      padding-top: 10vh;
+    font-family: "Montserrat"; 
+    line-height: 1.5;
+    max-width: 1366px;
+    margin: 0 50px;
+  }
+  .title{
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 36.57px;
+  text-transform:uppercase;
+  margin-bottom:50px;
+  }
+  .icon-box{
+    display:flex;
+    flex-direction:row;
+    gap:22px;
+    margin-bottom:50px;
+  }
+  .icon-box__container{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:16px;
+    width:300px;
+  }
+  .icon-desc{
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.5px;
+  }
+  .icon-img{
+    width:60px;
+    height:60px;
+  }
+  .tab-content{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    align-items:center;
+    margin-top:50px;
+    gap:42px;
+    justify-content: space-between;
+  }
+  .tab-img{
+    position:relative;
+    left:-58px;
+    width:426px;
+    height:269px;
+   object-fit:cover;
+   aspect-ratio: 1;
+    object-view-box: inset(0% -35% 0% 0%);
+    object-fit: cover;
+  }
+  .green{
+    color:#159E64;
+  }
+  .bold{
+    font-weight:700;
+  }
+  table{
+    border-collapse: collapse;
+  }
+  .tab-table__first th,.tab-table__first td,.tab-table__first tr{
+    width:110px;
+    text-align:left;
+    padding:24px 10px 24px 10px;
+  }
+  .tab-table__first{
+    padding:42px 0px 42px 0px;
+    margin-right:8px;
+  }
+  .tab-table__second{
+    background-color:#F1F1F1;
+    border-radius:20px;
+    padding:16px 30px 16px 30px;
+  }
+  .tab-table__second td{
+    padding:24px 10px 24px 10px; 
+  }
+  .tab-table__second table{
+    width:380px;
+  }
+  .align-right{
+    text-align:right;
+  }
+  tr{
+    border-bottom:solid 1px #0000001A;
+  }
+  tr:last-child{
+    border:none;
+  }
+  th,tr.td{
+font-size: 16px;
+line-height: 19.5px;
+font-weight:500;
+  }
+.tab-img-last{
+left:78px;
+}
+.tab-table__first:last-child td{
+    padding:24px 15px;
+}
+
+
+/*FAQ*/
+#faq{
+    margin:70px 0px;
+}
+.faq-header{
+    font-size: 18px;
+    border-bottom: 1px solid #15AE6E80;
+    padding: 30px;
+  }
+  
+  .faq-content {
+    margin: 0 auto;
+  }
+  
+  .faq-question {
+    padding: 30px 0;
+    border-bottom: 1px solid #15AE6E80;
+  }
+  
+  .panel-title {
+    font-size: 18px;
+    font-weight:700;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .panel-content {
+    font-size: 16px;
+    padding-top:15px;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
+    opacity: 0;
+    -webkit-transition: .4s ease;
+    -moz-transition: .4s ease;
+    -o-transition: .4s ease;
+    transition: .4s ease;
+  }
+  
+  .panel:checked ~ .panel-content{
+    height: auto;
+    opacity: 1;
+  }
+  
+  .plus {
+    position: absolute;
+    right:50px;
+    z-index: 5;
+    color:#15AE6E;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border: solid #15AE6E;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  .panel:checked ~ .plus {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  .panel {
+    display: none;
+  }
+
+@media(max-width:640px){
+    body{
+        margin:0 16px;
+    }
+        .icon-box{
+            display:flex;
+           flex-direction:column;
+           margin-bottom:32px;
+        }
+        .icon-box__container{
+            width:328px;
+        }
+        .tab-content {
+            display: flex;
+            flex-direction: column;
+            gap:30px;
+      }
+      .title{
+        font-size:22px;
+        margin-bottom:32px;
+      }
+      .panel-title{
+        font-size:16px;
+        max-width:292px;
+      }
+      .panel-content{
+        padding-top:10px;
+      }
+      .plus{
+        padding:6px;
+        right:21px;
+      }
+      .faq-question {
+        padding: 16px 0px 6px 0px;
+    }
+    .tabs{
+        padding:20px;
+    }
+    .tab-img-last{
+        order:3;
+        width:288px;
+    margin:auto;
+    left:auto;
+    object-fit:contain;
+    aspect-ratio: auto;
+    height:181px;
+    object-view-box: inset(0% 0% 0% 0%);
+    }
+    .green.bold{
+        display:none;
+    }
+    .tab-table__first{
+        padding: 32px 0px 0px 0px;
+        margin-right:0;
+    }
+    .tab-table__first tr > td:first-child{
+        display:none;
+    }
+    .tab-table__first th, .tab-table__first td, .tab-table__first tr {
+        width: 80px;
+        text-align: left;
+        padding: 16px 12px 16px 12px;
+        vertical-align:bottom;
+    }
+    .tab-table__second {
+        padding:20px;
+    }
+    .tab-table__second table{
+        width:288px;
+    }
+    .tab-table__second td{
+        font-size:14px;
+    }
+    .tab-content{
+        gap:32px;
+    }
+    .tab-table__first > table > tbody > tr:nth-child(2) > td:nth-child(2)::before{
+content: "Внешние";
+font-size: 14px;
+color: #00000080;
+font-weight: 500;
+position: relative;
+display: block;
+padding:10px 0px;
+    }
+.tab-table__first > table > tbody > tr:nth-child(3) > td:nth-child(2)::before{
+content: "Внутренние";
+font-size: 14px;
+color: #00000080;
+font-weight: 500;
+position: relative;
+display: block;
+padding:10px 0px;
+ }
+.tab-table__first > table > tbody > tr:nth-child(4) > td:nth-child(2)::before{
+content: "Двери";
+font-size: 14px;
+color: #00000080;
+font-weight: 500;
+position: relative;
+display: block;
+padding:10px 0px;
+ }
+.tab-img{
+    order:3;
+    width:288px;
+    margin:auto;
+    left:auto;
+    object-fit:contain;
+    aspect-ratio: auto;
+    height:181px;
+    object-view-box: inset(0% 0% 0% 0%);
+}
+.tabs label{
+    display:none;
+}
+.tabs select{
+    display:block;
+width:100%;
+height:60px;
+font-size: 16px;
+font-weight: 500;
+line-height: 19.5px;
+text-align: left;
+padding:20px;
+border:solid 1px #0000001A;
+border-radius:10px;
+}
+.tabs option{
+    height:60px;
+    font-size: 12px!important;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: left;
+    }
+    select { 
+        appearance: none;
+        overflow: hidden;
+        background: url('img/dropdown.svg') no-repeat 93%;
+      }
+    }
+/*Планш*/
+@media(min-width:640px) and (max-width:1026px){
+    body{
+        margin:0px 32px;
+    }
+    .icon-box{
+        flex-wrap:wrap;
+    }
+    .tabs{
+        padding:33px;
+    }
+    .tabs label{
+        padding:20px;
+    }
+    .tab-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top:0px;
+        gap: 0px;
+        justify-content: space-between;
+    }
+    .tab-img{
+        order:3;
+            width: 640px;
+            height: 332px;
+            aspect-ratio: 1;
+            object-view-box: inset(0% 0% 0% 0%);
+            object-fit: contain;
+            margin: auto;
+            left:auto;
+    }
+    .tab-table__first{
+        width:75%;
+        margin-right:0px;
+    }
+    .tab-table__first th, .tab-table__first td, .tab-table__first tr {
+        width: 110px;
+        padding: 28px 0px 28px 0px;
+    }
+    div.tab-table__second tr td:nth-child(1){
+        display:none;
+    }
+    div.tab-table__second table{
+        width:120px;
+    }
+    .tab-table__second {
+        padding: 6px;
+    }
+    .tab-table__second td {
+        padding: 10px 10px 10px 10px;
+    }
+    .tab-table__second  tr:nth-child(1) td.align-right.bold::before{
+    content:"Объем";
+    margin-bottom:5px;
+    text-align:left;
+    display:block;
+    font-weight:500;
+    font-size:12px;
+    color:#00000080;
+    }
+    .tab-table__second  tr:nth-child(2) td.align-right.bold::before{
+        content:"Масса брутто (max)";
+        display:block;
+        margin-bottom:5px;
+        text-align:left;
+        font-weight:500;
+        font-size:12px;
+        color:#00000080;
+        }
+        .tab-table__second  tr:nth-child(3) td.align-right.bold::before{
+            content:"Масса контейнера";
+            display:block;
+            text-align:left;
+            margin-bottom:5px;
+            font-weight:500;
+            font-size:12px;
+            color:#00000080;
+            }
+            .tab-table__second  tr:nth-child(3) td.align-right.bold::before{
+                content:"Масса груза";
+                display:block;
+                text-align:left;
+                margin-bottom:5px;
+                font-weight:500;
+                font-size:12px;
+                color:#00000080;
+                }
+                .tab-table__second td{
+                    text-align:left;
+                }
+    .title{
+        margin-bottom:32px;
+    }
+    .faq-question {
+        padding: 20px 0;
+        border-bottom: 1px solid #15AE6E80;
+    }
+}
+
+  
+
